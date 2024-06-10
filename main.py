@@ -1,12 +1,20 @@
+#Project by @Cxyofficial
+#本仓库为pr 添加青龙面板支持
+#原项目地址:https://github.com/ZYGLQexplorer/RainYun-Checkin
+#本pr地址:https://github.com/Cxyofficial/RainYun-Checkin
+#cron "0 9 * * *" main.py, tag=RainYun-Checkin
+
 import requests
 import json
 import telepot
+import os
 
-#Api信息
-api_key = ''
-tgpush = ''
-msgid = ''
-bot_token = ''
+#青龙环境变量Api信息
+#开启tg推送请在tgpush变量填入true,不开启请留空
+api_key = os.getenv('api_key')
+tgpush = os.getenv('tgpush')
+msgid = os.getenv('msgid')
+bot_token = os.getenv('bot_token')
 
 #请求用户信息
 url = "https://api.v2.rainyun.com/user/"
