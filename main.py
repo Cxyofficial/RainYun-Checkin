@@ -10,7 +10,7 @@ import telepot
 import os
 
 #青龙环境变量Api信息
-#开启tg推送请在tgpush变量填入true,不开启请留空
+#开启tg推送请在tgpush变量填入true,不开启请填入false
 api_key = os.getenv('api_key')
 tgpush = os.getenv('tgpush')
 msgid = os.getenv('msgid')
